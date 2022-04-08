@@ -1,7 +1,7 @@
 
-# Recognize Faces in video or image easily 
+# find the optimal model using the gradient descent algorithm
 
-in this code we will take any video or image and try to Recognize all faces on it using **OpenCV** and **dlib** libraries;
+in this code we will take any dataset with one feature and one target and try to find their optimal linear model, and minimize the cost of this linear model using the gradient descent algorithm.
 
 ![](FacialReco.png)
 
