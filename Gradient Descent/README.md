@@ -25,57 +25,18 @@ pip install numpy
 ```
 
 # THEORY
-## **Database** Folder
-To determine the faces that our program should know
-- Put the **face image** as **.png** or **.jpg** format in **Database** Folder
-- using the name of the image:
-   <br /> you can add The name and also a small description as follow : 
-   
-  ```
-  Name1-Name2-Name3-First description line- second description line- third description line- ... .jpg
-  ```
-  Note: **"-"** used to write in new line
-  <br />Example: 
-  
-  ```
-  Angela-Merkel-[German politician serving- as Chancellor of Germany- since 2005].jpg
-  ```
-  
-## code 
-
-- Fonctionnalities avaliable in this code:
-
-interesting instance :
+## **LINEAR MODEL** 
+From the collected Dataset, we can develop a linear model of the type:
 ```
-Recognizer = Recognizer(Database="Database",
-                        Tolerance=0.55,
-                        detectFrontalFace=False, 
-                        detectLandmarks=True)
-
-Image = Image(Recognizer=Recognizer,
-              filename="Faces\\angela-merkel.jpeg",
-              Save=True) 
-
-Video = Video(Recognizer=Recognizer,
-              filename="Videos\elon.mp4",   
-              )
+    f(x)= ax + b        Where 𝒂 and 𝒃 are the model parameters.
 ```
-
-``` 
-        - Database              = To choose which database direction you will use         
-        - Tolerance             = 0 to 1 to determine tolerance of Recognition        
-        - detectFrontalFace     = True or false to detect frontale face in video or Image
-        - detectLandmarks       = True or false to detect 68 landmarks in video or Image 
-        - save                  = True or false to save image after Recognition
-        
-``` 
- 
-- start detection with :
-``` 
-        - Image.RecognizeFaces() : to Recognitize faces in image
-        - Video.RecognizeFaces() : to Recognitize faces in Video
-        - Video.AddAudio()       : to add audio to Video after face Recognition
-``` 
+A good model gives small errors between its predictions 𝒇(𝒙) and the examples (𝒚) of the Dataset. 
+We do not know the values of the parameters 𝒂 and 𝒃, it will be the role of the machine to find them, so as to draw a model that fits well in our point cloud.
+## **COST FUNCTION** 
+Each prediction comes with an error, so we have 𝒎 errors. We define the Cost Function 𝑱(𝒂,𝒃) to be the average of all errors:
+```
+pip install numpy 
+```
 # Author
 
 * **Ahmed Jellouli** - *ELECTRICAL ENGINEERING STUDENT INTERESTED IN DATA ANALYSIS*
