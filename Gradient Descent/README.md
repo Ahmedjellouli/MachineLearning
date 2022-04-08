@@ -64,7 +64,7 @@ We can conclude this algorithm in the following recursive function:
 ```
 x, y = make_regression(n_samples= 100, n_features=1, noise = 10)  
 y  = y.reshape(100,1)                # target (100,1)  
-X = np.hstack((x, np.ones(x.shape))) # les features (100,2)  
+X = np.hstack((x, np.ones(x.shape))) # les features (100,2) 
 ```
 - chose a random iniitial parametre a0 and b0
 ```
@@ -88,6 +88,9 @@ def gradientDescente(X, y, Theta, learningRate, iteration):
 ```
 OptimaleTheta = gradientDescente(X,y, theta, 0.1, 1000)  
 ```
+<p align="center">
+  <img width="550" height="380" src="optimalModele.png">
+</p>
 
 ```
 
