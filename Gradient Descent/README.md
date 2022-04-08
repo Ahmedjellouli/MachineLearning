@@ -41,7 +41,16 @@ Each prediction comes with an error, so we have 𝒎 errors. We define the Cost 
 ![image](https://user-images.githubusercontent.com/90426606/162481932-6bc7b101-8cf1-43cf-b3cf-0fc604257d89.png)
 
 The cost function is a square function so the appearance of this function can take the following form:
+<p align="center">
+  <img width="424" height="387" src="CostFunction.png">
+</p>
+To find the minimum, we can use several methods based on derivate the cost function  𝑱(𝒂,𝒃), among the most popular algorithm used is The Gradient Descent
 
+## **THE GRADIENT DESCENT**
+This algorithm allows to find the minimum of the cost function 𝑱(𝒂, 𝒃) from random coordinates a0 and b0:
+-Calculate the slope of the Cost Function, so derive J(a,b) at points a0 and b0
+-Move a certain distance ∝ in the direction of the steepest slope. This results in changing the parameters 𝒂 and 𝒃
+-Repeat steps 1 and 2 until you reach the minimum of 𝑱(𝒂, 𝒃).
 # Author
 
 * **Ahmed Jellouli** - *ELECTRICAL ENGINEERING STUDENT INTERESTED IN DATA ANALYSIS*
