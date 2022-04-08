@@ -1,5 +1,5 @@
 
-# find the optimal model using the gradient descent algorithm
+# Find the optimal model using the gradient descent algorithm
 
 in this code we will take any dataset with one feature and one target and try to find their optimal linear model, and minimize the cost of this linear model using the gradient descent algorithm.
 
@@ -48,9 +48,14 @@ To find the minimum, we can use several methods based on derivate the cost funct
 
 ## **THE GRADIENT DESCENT**
 This algorithm allows to find the minimum of the cost function 𝑱(𝒂, 𝒃) from random coordinates a0 and b0:
--Calculate the slope of the Cost Function, so derive J(a,b) at points a0 and b0
--Move a certain distance ∝ in the direction of the steepest slope. This results in changing the parameters 𝒂 and 𝒃
--Repeat steps 1 and 2 until you reach the minimum of 𝑱(𝒂, 𝒃).
+
+- Calculate the slope of the Cost Function, so derive J(a,b) at points a0 and b0
+- Move a certain distance ∝ in the direction of the steepest slope. This results in changing the parameters 𝒂 and 𝒃
+- Repeat steps 1 and 2 until you reach the minimum of 𝑱(𝒂, 𝒃).
+We can conclude this algorithm in the following recursive function:
+<p align="center">
+  <img width="208" height="116" src="https://user-images.githubusercontent.com/90426606/162486556-628e3441-5594-4727-95a9-1dc292fd8e6f.png">
+</p>
 # Author
 
 * **Ahmed Jellouli** - *ELECTRICAL ENGINEERING STUDENT INTERESTED IN DATA ANALYSIS*
