@@ -3,36 +3,28 @@
 
 in this code we will take any dataset with one feature and one target and try to find their optimal linear model, and minimize the cost of this linear model using the gradient descent algorithm.
 
-![](FacialReco.png)
+<p align="center">
+  <img width="550" height="380" src="optimalModele.png">
+</p>
 
 # Prerequisites
 
 after all make sure that you have already install the folowing libraries:
 
-- opencv
+- matplotlib
 ```
-pip install opencv-python
+pip install matplotlib
 ```
-- dlib "Require Cmake"
+-  sklearn 
 ```
-pip install cmake
+pip install sklearn 
 ```
+- numpy 
 ```
-pip install dlib
+pip install numpy 
 ```
-- time
-```
-pip install time
-```
-- moviepy
-```
-pip install moviepy
-```
-- screeninfo
-```
-pip install screeninfo
-```
-# How to use this code
+
+# THEORY
 ## **Database** Folder
 To determine the faces that our program should know
 - Put the **face image** as **.png** or **.jpg** format in **Database** Folder
