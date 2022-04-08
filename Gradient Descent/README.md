@@ -71,9 +71,23 @@ X = np.hstack((x, np.ones(x.shape))) # les features (100,2)
 theta  = np.random.randn(2,1)        # valeur initiale random des parametres a et b /tetha = (a,b)    
 ```
 <p align="center">
-  <img width="550" height="380" src="https://user-images.githubusercontent.com/90426606/162497208-a46a34ca-0028-4561-8d26-63d2da4e9c78.png">
+  <img width="550" height="380" src="initialModele.png">
 </p>
-- create a random linear regression dataset
+
+- calculate the parameters a and b using the formula of the descending gradient
+
+```
+def gradientDescente(X, y, Theta, learningRate, iteration):
+  for i in range(0, iteration):
+       m = len(y)
+       Theta = Theta - learningRate * (1 / m) * (X.T).dot(X.dot(Theta) - y)
+  return Theta  
+```
+- Optimal parametres a and b
+
+```
+OptimaleTheta = gradientDescente(X,y, theta, 0.1, 1000)  
+```
 
 ```
 
