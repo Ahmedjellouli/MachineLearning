@@ -54,8 +54,29 @@ This algorithm allows to find the minimum of the cost function 𝑱(𝒂, 𝒃) 
 - Repeat steps 1 and 2 until you reach the minimum of 𝑱(𝒂, 𝒃).
 We can conclude this algorithm in the following recursive function:
 <p align="center">
-  <img width="208" height="116" src="https://user-images.githubusercontent.com/90426606/162486556-628e3441-5594-4727-95a9-1dc292fd8e6f.png">
+  <img width="208" height="116" src="https://user-images.githubusercontent.com/90426606/162487031-8133e2c4-a00e-4b73-b3c1-22672c6c5835.png">
 </p>
+
+# CODE
+
+- create a random linear regression dataset
+
+```
+x, y = make_regression(n_samples= 100, n_features=1, noise = 10)  
+y  = y.reshape(100,1)                # target (100,1)  
+X = np.hstack((x, np.ones(x.shape))) # les features (100,2)  
+```
+- chose a random iniitial parametre a0 and b0
+```
+theta  = np.random.randn(2,1)        # valeur initiale random des parametres a et b /tetha = (a,b)    
+```
+<p align="center">
+  <img width="550" height="380" src="https://user-images.githubusercontent.com/90426606/162497208-a46a34ca-0028-4561-8d26-63d2da4e9c78.png">
+</p>
+- create a random linear regression dataset
+
+```
+
 # Author
 
 * **Ahmed Jellouli** - *ELECTRICAL ENGINEERING STUDENT INTERESTED IN DATA ANALYSIS*
