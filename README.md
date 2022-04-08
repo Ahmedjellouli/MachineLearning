@@ -1,1 +1,1 @@
-# some popular algorithme in machine learning
+# Some popular algorithm in machine learning
