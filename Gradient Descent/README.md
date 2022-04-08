@@ -62,7 +62,7 @@ Recognizer = Recognizer(Database="Database",
 
 Image = Image(Recognizer=Recognizer,
               filename="Faces\\angela-merkel.jpeg",
-              Save=True)
+              Save=True) 
 
 Video = Video(Recognizer=Recognizer,
               filename="Videos\elon.mp4",   
