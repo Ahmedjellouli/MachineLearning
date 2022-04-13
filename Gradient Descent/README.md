@@ -92,7 +92,6 @@ OptimaleTheta = gradientDescente(X,y, theta, 0.1, 1000)
   <img width="550" height="380" src="optimalModele.png">
 </p>
 
-```
 
 # Author
 
@@ -101,5 +100,3 @@ OptimaleTheta = gradientDescente(X,y, theta, 0.1, 1000)
 # License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
-
-
